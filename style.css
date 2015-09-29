@@ -1,0 +1,52 @@
+@-webkit-keyframes moveright{
+	from{background-position: 0 0;}
+	to{background-position: 100% 0;}
+}
+/*
+@-webkit-keyframes moveup{
+	from{background-position: 0 0;}
+	to{background-position: 0 100%;}
+}
+@-webkit-keyframes movedown{
+	from{background-position: 0 100%;}
+	to{background-position: 0 0;} 
+}
+*/
+#jet{background-image:url("sky.jpg");
+width:auto;
+height:650px;}
+#jet:target
+{
+-webkit-animation:moveright 4s linear infinite
+}
+#ins{font-family:calibri;
+    font-size:large;
+    font-weight:bold;
+    background-color:white;}
+.img {
+	overflow-y: hidden;
+	max-height: 500px;
+	transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: cubic-bezier(100, 0, 0.5, 0);
+}
+.slider.closed {
+	max-height: 0;
+}
+
+/*
+#up{font-family:calibri;
+    font-size:xx-large;
+    font-weight:bold;
+    background-color:white;}
+
+#down{font-family:calibri;
+    font-size:xx-large;
+    font-weight:bold;
+    background-color:white;}
+
+#up:target
+{-webkit-animation:moveup 2s linear infinite}
+#down:target
+{-webkit-animation:movedown 2s linear infinite}
+*/
